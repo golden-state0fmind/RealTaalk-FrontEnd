@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// starts header will need to code routers, links and pages 
+
 const Header = (props) => {
     return (
         <header>
