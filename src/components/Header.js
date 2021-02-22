@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-    Card, CardText, CardBody, CardLink,
+    Button, Card, CardText, CardBody, CardLink,
     CardTitle, CardSubtitle
 } from 'reactstrap';
 
@@ -10,11 +10,11 @@ const Header = (props) => {
     return (
         <header className="header">
             <div>
-                <Card>
+                <Card className="card">
                     <img />
-                    <CardBody>
+                    <CardBody className="card-body">
                         <CardTitle tag="h5"><Link to={'/'}>Home</Link></CardTitle>
-                        <div className='links'>
+                        <label className='links'>
                             <ul>
                                 {props.currentUser ?
                                     <>
@@ -23,12 +23,12 @@ const Header = (props) => {
                                     </>
                                     :
                                     <>
-                                        <li><Link to={'/register'}>Register</Link></li>
+                                        <Button outline color="success"><Link to={'/register'}>Register</Link></Button>{' '}
                                         <li><Link to={'/login'}>Login</Link></li>
                                     </>
                                 }
                             </ul>
-                        </div>
+                        </label>
                     </CardBody>
                 </Card>
             </div>
