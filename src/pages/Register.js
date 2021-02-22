@@ -47,7 +47,7 @@ const Register = props => {
                 <div className='form-group'>
                     <label htmlFor="name">Email</label>
                     <input
-                        onSubmit={handleEmail}
+                        onChange={handleEmail}
                         value={email}
                         type="email"
                         id='email'
