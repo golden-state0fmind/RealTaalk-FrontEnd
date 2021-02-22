@@ -1,7 +1,15 @@
 import React from 'react';
+import { Container } from 'reactstrap'
 // builds footer just need to insert info
-const Footer = () => {
-    return <p>Footer Here!</p>
+const Footer = (props) => {
+    return (
+        <>
+            <Container
+                className="themed-container footer"
+                fluid={true}
+            >Footer</Container>
+        </>
+    )
 }
 
 export default Footer;
