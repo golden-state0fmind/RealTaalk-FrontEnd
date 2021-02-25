@@ -17,7 +17,7 @@ const Header = (props) => {
                             {props.currentUser ?
                                 <>
                                     <Link to={'/profile'}></Link>
-                                    <a href='/logout' onClick={props.logout}>Log Out</a>
+                                    <Button className="regbtn" href='/logout' onClick={props.logout}>Log Out</Button>
                                 </>
                                 :
                                 <>
