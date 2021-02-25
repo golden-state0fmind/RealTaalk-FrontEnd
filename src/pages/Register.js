@@ -30,12 +30,13 @@ const Register = props => {
         }
     }
     return (
-        <div>
+        <div className="container">
             <h4>Register</h4>
             <form onSubmit={handleSubmit}>
                 <div className='form-group'>
                     <label htmlFor="name">Name</label>
                     <input
+                        className="inputForm"
                         onChange={handleName}
                         value={name}
                         type="text"
@@ -57,6 +58,7 @@ const Register = props => {
                 <div className='form-group'>
                     <label htmlFor="name">Password</label>
                     <input
+                        className="inputForm"
                         onChange={handlePassword}
                         value={password}
                         type="password"
@@ -68,6 +70,7 @@ const Register = props => {
                 <div className='form-group'>
                     <label htmlFor="confirm-password">Confirm Password</label>
                     <input
+                        className="inputForm"
                         onChange={handleConfirmPassword}
                         value={confirmPassword}
                         type="password"
