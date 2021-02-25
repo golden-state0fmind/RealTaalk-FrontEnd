@@ -29,11 +29,12 @@ body {
   margin: 5px;
   padding: 20px;
   background-color: #0988e2;
+  color: bisque;
   border-radius: 5px 60px;
 }
 a {
   display: flex;
-  color: rgb(0, 0, 0);
+  color: bisque;
   list-style: none;
 }
 /* Styles Footer*/
