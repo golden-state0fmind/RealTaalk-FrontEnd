@@ -1,9 +1,7 @@
 import React from 'react';
 const Home = () => {
     return (
-        <div>
-            Stay Active
-        </div>
+        <h1>Keep Coding</h1>
     )
 }
 
