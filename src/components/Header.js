@@ -1,33 +1,30 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-    Button, Card, CardText, CardBody, CardLink,
-    CardTitle, CardSubtitle
+    Button, Card, CardBody, CardTitle
 } from 'reactstrap';
-
 const Header = (props) => {
+    const [state, setState] = useState()
 
     return (
         <header className="header">
             <div>
                 <Card className="card">
-                    <img />
                     <CardBody className="card-body">
-                        <CardTitle tag="h5"><Link to={'/'}>Home</Link></CardTitle>
+                        <CardTitle tag="h5"></CardTitle>
+                        <Button className="regbtn"><Link to={'/'}>Home</Link></Button>
                         <label className='links'>
-                            <ul>
-                                {props.currentUser ?
-                                    <>
-                                        <li><Link to={'/profile'}></Link></li>
-                                        <li><a href='/logout' onClick={props.logout}>Log Out</a></li>
-                                    </>
-                                    :
-                                    <>
-                                        <Button outline color="success"><Link to={'/register'}>Register</Link></Button>{' '}
-                                        <li><Link to={'/login'}>Login</Link></li>
-                                    </>
-                                }
-                            </ul>
+                            {props.currentUser ?
+                                <>
+                                    <Link to={'/profile'}></Link>
+                                    <a href='/logout' onClick={props.logout}>Log Out</a>
+                                </>
+                                :
+                                <>
+                                    <Button className="regbtn"><Link to={'/register'}>Register</Link></Button>{' '}
+                                    <Button className="regbtn"><Link to={'/login'}>Login</Link></Button>
+                                </>
+                            }
                         </label>
                     </CardBody>
                 </Card>

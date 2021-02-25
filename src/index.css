@@ -1,6 +1,6 @@
 /*Global Styles*/
 * {
-  box-sizing: border-box;
+  display: border-box;
 }
 *:before,
 *:after {
@@ -8,7 +8,7 @@
 }
 html,
 body {
-  background-color: #000000be;
+  background-color: #00000090;
   height: 100%;
   position: relative;
 }
@@ -19,19 +19,27 @@ body {
   position: relative;
   padding-bottom: 100px; /* height of your footer */
 }
-/*card-body styles*/
-
-.card-body {
+/*Header styles*/
+.header {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: baseline;
+  justify-content: space-evenly;
 }
-/* Styles lists */
+.container {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px blue;
+}
 
-li,
+/* Styles lists */
+.regbtn {
+  margin: 5px;
+  padding: 20px;
+  background-color: #0988e2;
+  border-radius: 15px 50px;
+}
 a {
-  color: #aabcc9;
+  display: flex;
+  color: rgb(0, 0, 0);
   list-style: none;
 }
 /* Styles Footer*/
