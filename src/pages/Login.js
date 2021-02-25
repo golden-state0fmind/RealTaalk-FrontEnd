@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Redirect } from 'react-router-dom'
 import UserModel from '../models/user'
-
+import { Col, Row, Form, Button } from "react-bootstrap";
 const Login = props => {
     let [email, setEmail] = useState('')
     let [password, setPassword] = useState('')
@@ -33,32 +33,36 @@ const Login = props => {
 
     return (
         <div>
-            <h4>Login</h4>
-            <form onSubmit={handleSubmit}>
-                <div className='form-group'>
+            <h2>Login</h2>
+            <Form onSubmit={handleSubmit}>
+                <Form.Group as={Row} controlId="email">
                     <label htmlFor="name">Email</label>
-                    <input
-                        onChange={handleEmail}
-                        value={email}
-                        type="email"
-                        id='email'
-                        name="email"
-                        required
-                    />
-                </div>
-                <div className='form-group'>
-                    <label htmlFor="password">Password</label>
-                    <input
-                        onChange={handlePassword}
-                        value={password}
-                        type="password"
-                        name="password"
-                        id="password"
-                        required
-                    />
-                </div>
-                <button type="submit">Login</button>
-            </form>
+                    <Col sm={10}>
+                        <input
+                            onChange={handleEmail}
+                            value={email}
+                            type="email"
+                            id='email'
+                            name='email'
+                            required />
+                    </Col>
+                </Form.Group>
+                <Form.Group as={Row} controlId="password">
+                    <label htmlFor="name">Password</label>
+                    <Col sm={10}>
+                        <input
+                            className="inputForm"
+                            onChange={handlePassword}
+                            value={password}
+                            type="password"
+                            name="password"
+                            id="password"
+                            required
+                        />
+                    </Col>
+                </Form.Group>
+                <Button className="regbtn" type="submit">Login</Button>
+            </Form>
         </div>
     )
 }
