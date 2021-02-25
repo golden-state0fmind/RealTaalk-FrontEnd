@@ -24,18 +24,12 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  border: solid 2px blue;
-}
-
 /* Styles lists */
 .regbtn {
   margin: 5px;
   padding: 20px;
   background-color: #0988e2;
-  border-radius: 15px 50px;
+  border-radius: 5px 60px;
 }
 a {
   display: flex;
