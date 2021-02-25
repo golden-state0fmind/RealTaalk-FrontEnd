@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import UserModel from '../models/user';
+import { Col, Row, Form, Button } from "react-bootstrap";
 
 const Register = props => {
     const [name, setName] = useState('');
@@ -31,56 +32,66 @@ const Register = props => {
     }
     return (
         <div className="container">
-            <h4>Register</h4>
-            <form onSubmit={handleSubmit}>
-                <div className='form-group'>
+            <h2>Register</h2>
+            <Form onSubmit={handleSubmit}>
+                <Form.Group as={Row} controlId="name">
                     <label htmlFor="name">Name</label>
-                    <input
-                        className="inputForm"
-                        onChange={handleName}
-                        value={name}
-                        type="text"
-                        name="name"
-                        id="name"
-                        required
-                    />
-                </div>
-                <div className='form-group'>
+                    <Col sm={10}>
+                        <input
+                            className="inputForm"
+                            onChange={handleName}
+                            value={name}
+                            type="text"
+                            name="name"
+                            id="name"
+                            required
+                        />
+                    </Col>
+                </Form.Group>
+                <Form.Group as={Row} controlId="email">
                     <label htmlFor="name">Email</label>
-                    <input
-                        onChange={handleEmail}
-                        value={email}
-                        type="email"
-                        id='email'
-                        name='email'
-                        required />
-                </div>
-                <div className='form-group'>
+                    <Col sm={10}>
+                        <input
+                            onChange={handleEmail}
+                            value={email}
+                            type="email"
+                            id='email'
+                            name='email'
+                            required />
+                    </Col>
+                </Form.Group>
+                <Form.Group as={Row} controlId="password">
                     <label htmlFor="name">Password</label>
-                    <input
-                        className="inputForm"
-                        onChange={handlePassword}
-                        value={password}
-                        type="password"
-                        name="password"
-                        id="password"
-                        required
-                    />
-                </div>
-                <div className='form-group'>
+                    <Col sm={10}>
+                        <input
+                            className="inputForm"
+                            onChange={handlePassword}
+                            value={password}
+                            type="password"
+                            name="password"
+                            id="password"
+                            required
+                        />
+                    </Col>
+                </Form.Group>
+                <Form.Group as={Row} controlId="password">
                     <label htmlFor="confirm-password">Confirm Password</label>
-                    <input
-                        className="inputForm"
-                        onChange={handleConfirmPassword}
-                        value={confirmPassword}
-                        type="password"
-                        id="confirm-password"
-                        name="confirm-password"
-                        required
-                    />
-                </div>
-                <button type="submit">Register</button>
-            </form>
+                    <Col sm={10}>
+                        <input
+                            className="inputForm"
+                            onChange={handleConfirmPassword}
+                            value={confirmPassword}
+                            type="password"
+                            id="confirm-password"
+                            name="confirm-password"
+                            required
+                        />
+                    </Col>
+                </Form.Group>
+                <Form.Group as={Row}>
+                    <Button className="regbtn" type="submit">Register</Button>
+                </Form.Group>
+            </Form>
         </div>
     )
 }
