@@ -24,7 +24,13 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-/* Styles lists */
+/*Styles labels*/
+label,
+h2,
+h1 {
+  color: bisque;
+}
+/* Styles buttons */
 .regbtn {
   margin: 5px;
   padding: 20px;
