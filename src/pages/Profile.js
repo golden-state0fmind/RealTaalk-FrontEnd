@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Col, Row, Form, Button } from "react-bootstrap";
 import io from 'socket.io-client'
 
-const socket = io('http://localhost:4000')
+const socket = io()
 
 
 const Profile = props => {
