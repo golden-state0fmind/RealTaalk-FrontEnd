@@ -1,53 +1,27 @@
-/*Global Styles*/
-* {
-  display: border-box;
-}
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-html,
-body {
-  background-color: #00000090;
-  height: 100%;
-  position: relative;
-}
-.main-container {
-  min-height: 100vh; /* will cover the 100% of viewport */
-  overflow: hidden;
-  display: block;
-  position: relative;
-  padding-bottom: 100px; /* height of your footer */
-}
 /*Header styles*/
 .header {
   display: flex;
   justify-content: space-evenly;
 }
 /*Styles labels*/
-label,
+h1,
 h2,
-h1 {
-  color: bisque;
+label {
+  color: white;
 }
 /* Styles buttons */
-.regbtn {
-  margin: 5px;
-  padding: 20px;
-  background-color: #0988e2;
-  color: bisque;
-  border-radius: 5px 60px;
-}
-a {
-  display: flex;
-  color: bisque;
-  list-style: none;
+links:hover {
+  text-decoration: none;
+  color: #0988e2;
 }
 /* Styles Footer*/
 .footer {
-  position: absolute;
+  position: fixed;
+  left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #0988e2;
-  color: rgb(0, 0, 0);
+  text-align: center;
+  color: #0988e2;
+  background-color: #000000d8;
+  border: solid 2px #0988e2;
 }
