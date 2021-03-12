@@ -35,7 +35,9 @@ const Register = props => {
             <h2>Register</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group as={Row} controlId="name">
-                    <label htmlFor="name">Name</label>
+                    <Col>
+                        <label htmlFor="name">Name</label>
+                    </Col>
                     <Col sm={10}>
                         <input
                             className="inputForm"
@@ -49,7 +51,9 @@ const Register = props => {
                     </Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="email">
-                    <label htmlFor="name">Email</label>
+                    <Col>
+                        <label htmlFor="name">Email</label>
+                    </Col>
                     <Col sm={10}>
                         <input
                             onChange={handleEmail}
@@ -61,7 +65,9 @@ const Register = props => {
                     </Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="password">
-                    <label htmlFor="name">Password</label>
+                    <Col>
+                        <label htmlFor="name">Password</label>
+                    </Col>
                     <Col sm={10}>
                         <input
                             className="inputForm"
@@ -75,7 +81,9 @@ const Register = props => {
                     </Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="password">
-                    <label htmlFor="confirm-password">Confirm Password</label>
+                    <Col>
+                        <label htmlFor="confirm-password">Confirm Password</label>
+                    </Col>
                     <Col sm={10}>
                         <input
                             className="inputForm"
@@ -88,9 +96,7 @@ const Register = props => {
                         />
                     </Col>
                 </Form.Group>
-                <Form.Group as={Row}>
-                    <Button className="regbtn" type="submit">Register</Button>
-                </Form.Group>
+                <Button variant="success" type="submit">Register</Button>
             </Form>
         </div>
     )
