@@ -8,27 +8,28 @@ Connecting users through chat rooms and understanding websockets while learning 
 
 ## Technologies Used
 
-JavaScript
-Node.js
-Express
-React.js
-PostgreSQL
-GraphQL
-Apollo
-Socket.io
-HTML
-CSS
+JavaScript,
+PostgreSQL,
+Express,
+React,
+Node.js,
+Socket.io,
+React-Bootstrap,
+HTML/CSS,
+Figma
 
 ##### ERD
 
 ![ERD](images/REALTAALk.ERD.png)
 
-##### Screenshot(s)
+##### Wireframes
 
 ![LandingPage](images/landingPage.svg)
 ![Signup](images/signup.svg)
 ![Login](images/LOGINPAGE.svg)
 ![Messages](images/MessageBoard.png)
+
+##### Screenshots
 
 ## Future Development
 
