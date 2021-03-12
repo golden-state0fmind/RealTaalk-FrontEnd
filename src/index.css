@@ -3,6 +3,11 @@
   display: flex;
   justify-content: space-evenly;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /*Styles labels*/
 h1,
 h2,
@@ -10,10 +15,7 @@ label {
   color: white;
 }
 /* Styles buttons */
-links:hover {
-  text-decoration: none;
-  color: #0988e2;
-}
+
 /* Styles Footer*/
 .footer {
   position: fixed;
