@@ -7,7 +7,7 @@ const Footer = (props) => {
             <Container
                 className="themed-container footer"
                 fluid={true}
-            >RealTaalk &copy; RealTaalk</Container>
+            >Antonio Reyes 2021 &copy; RealTaalk</Container>
         </>
     )
 }
