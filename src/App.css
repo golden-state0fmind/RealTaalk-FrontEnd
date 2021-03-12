@@ -1,3 +1,9 @@
-.App {
+/* Whatever styles I want global */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
   text-align: center;
+  background-color: rgb(0, 0, 0);
 }
