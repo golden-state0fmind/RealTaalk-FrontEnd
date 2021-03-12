@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Redirect } from 'react-router-dom'
 import UserModel from '../models/user'
 import { Col, Row, Form, Button } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 const Login = props => {
     let [email, setEmail] = useState('')
     let [password, setPassword] = useState('')
@@ -32,11 +34,13 @@ const Login = props => {
     if (props.currentUser) return <Redirect to='/profile' />
 
     return (
-        <div>
+        <div className="container">
             <h2>Login</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group as={Row} controlId="email">
-                    <label htmlFor="name">Email</label>
+                    <Col>
+                        <label htmlFor="name">Email</label>
+                    </Col>
                     <Col sm={10}>
                         <input
                             onChange={handleEmail}
@@ -48,7 +52,9 @@ const Login = props => {
                     </Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="password">
-                    <label htmlFor="name">Password</label>
+                    <Col>
+                        <label htmlFor="name">Password</label>
+                    </Col>
                     <Col sm={10}>
                         <input
                             className="inputForm"
@@ -61,7 +67,7 @@ const Login = props => {
                         />
                     </Col>
                 </Form.Group>
-                <Button className="regbtn" type="submit">Login</Button>
+                <Button variant="success" type="submit">Login</Button>
             </Form>
         </div>
     )
