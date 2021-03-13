@@ -3,6 +3,10 @@ import { Col, Row, Form, Button } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import io from 'socket.io-client';
 // backend server endpoint for the socket
+// socket is long pulling and wont disconnect
+// still need to send message back and forth to server side
+// cors proving to be a challenge sometimes
+// look into listening to emits on the port
 const socket = io('http://localhost:3000')
 
 const Profile = props => {

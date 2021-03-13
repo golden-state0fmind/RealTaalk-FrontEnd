@@ -31,6 +31,9 @@ Figma
 
 ##### Screenshots
 
+![Chat](images/chatRoom.png)
+![Login](images/loginPage.png)
+
 ## Future Development
 
 Future plans will include allowing the user to save threads,send different file types and customize chat rooms.
